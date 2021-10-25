@@ -1,24 +1,34 @@
 import React from 'react';
+import {
+    // BrowserRouter as Router,
+    HashRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
 import Header from '../../presentational/Header';
-import PageHeader from "../../presentational/PageHeader";
-import PageFooter from "../../presentational/PageFooter";
-import Footer from "../../presentational/Footer";
+import TableOfContents from "../TableOfContents";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-// import { faGithubAlt, faFacebookF, faTwitch, faSlack } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import DocsPage from "../DocsPage";
 
-library.add(faHeart, fab);
+library.add(fas, fab);
 
 const App = () => {
     return (
-        <div>
-            <Header />
-            <PageHeader />
-            <PageFooter />
-            <Footer />
-        </div>
+        <Router>
+            <Switch>
+                <Route path="/docs-page" exact={false}>
+                    <Header withSearchEnabled />
+                    <DocsPage />
+                </Route>
+                <Route path="/">
+                    <Header />
+                    <TableOfContents />
+                </Route>
+            </Switch>
+        </Router>
     );
 }
 
