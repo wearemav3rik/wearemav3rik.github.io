@@ -2,11 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const PageFooter = () => (
-  <section className="cta-section text-center py-5 theme-bg-dark position-relative">
+  <section className="cta-section text-center py-5 theme-bg-dark position-relative" style={{transform: 'matrix(1, -0.09, 0, 1, 0, 0)'}}>
     <div className="theme-bg-shapes-right"/>
     <div className="theme-bg-shapes-left"/>
-    <div className="container">
-      <h3 className="mb-2 text-white mb-3">
+    <div className="container" style={{transform: 'matrix(1, 0.09, 0, 1, 0, 0)' }}>
+      <h3 className="mb-2 text-white mb-3 styled-heading">
         Participate in Improving the Style Guide
       </h3>
       <div className="section-intro text-white mb-3 single-col-max mx-auto">
