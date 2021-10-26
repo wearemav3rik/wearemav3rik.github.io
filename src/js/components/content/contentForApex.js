@@ -42,17 +42,23 @@ export const contentsForApex = [
             {id: 'item-1-4', label: 'Formatting Code',
                 elements: [
                     {
-                        type: 'paragraph',
+                        type: 'callout-block',
+                        blockType: 'info',
+                        label: 'VS Code + Apex PMD Plugin',
                         html: `
-                            <h3>VS Code + Apex PMD Plugin</h3>
-                            <p>For VS Code users, the hotkey is <strong>Ctrl + Shift + F</strong> while on the Apex class file.</p>
-                            <p>Another method is to <strong>Cmd + Shift + P</strong> and choose Format Document.</p>
-                            <br/>
-                            <h3>IntelliJ + IlluminatedCloud</h3>
-                            <p>For IntelliJ, the hotkey is <strong>Cmd + Option + L</strong> while on the Apex class file.</p>
-                            <p>Another method is to go to <strong>Menu Bar > Code > Reformat Code.</strong></p>
+                            <p>For VS Code users, the hotkey is <strong>Ctrl + Shift + F</strong> while on the Apex class file.</br>
+                            Another method is to <strong>Cmd + Shift + P</strong> and choose Format Document.</p>
                         `
-                    }
+                    },
+                    {
+                        type: 'callout-block',
+                        blockType: 'info',
+                        label: 'IntelliJ + IlluminatedCloud',
+                        html: `
+                            <p>For IntelliJ, the hotkey is <strong>Cmd + Option + L</strong> while on the Apex class file.<br/>
+                            Another method is to go to <strong>Menu Bar > Code > Reformat Code.</strong></p>
+                        `
+                    },
                 ]
             },
         ],
@@ -611,10 +617,10 @@ export const contentsForApex = [
     },
     {
         id: 'section-8',
-        title: 'Writing Tests',
+        title: 'Writing Unit Tests',
         icon: ['fas', 'book-reader'],
-        description: 'Writing tests is not just about Code Coverage. Our patterns ensure that we have considered both positive and negative scenarios of a feature.',
-        lastModifiedDate: '2021-10-26',
+        description: 'Writing tests is not just about Code Coverage. We want to adapt a test driven mindset and be able to ship our code with confidence. Our patterns ensure that we have considered both positive and negative scenarios of a feature.',
+        lastModifiedDate: '2021-10-27',
         sections: [
             {id: 'item-8-1', label: 'Basic Test Patterns',
                 elements: [
