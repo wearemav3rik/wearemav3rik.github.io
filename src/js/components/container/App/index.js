@@ -15,15 +15,22 @@ import DocsPage from "../DocsPage";
 
 library.add(fas, fab);
 
+const DocsPageComponent = ({ match }) => {
+    const { contentId } = match.params;
+    return (
+        <React.Fragment>
+            <Header withSearchEnabled />
+            <DocsPage contentId={contentId}/>
+        </React.Fragment>
+    )
+}
+
 const App = () => {
     return (
         <Router>
             <Switch>
-                <Route path="/docs-page" exact={false}>
-                    <Header withSearchEnabled />
-                    <DocsPage />
-                </Route>
-                <Route path="/">
+                <Route path="/docs-page/:contentId" exact component={DocsPageComponent} />
+                <Route path="/" exact>
                     <Header />
                     <TableOfContents />
                 </Route>
