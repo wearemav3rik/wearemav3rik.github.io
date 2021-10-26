@@ -6,6 +6,7 @@ import SidebarItem from "../../presentational/SidebarItem";
 import Element from '../../presentational/Element';
 
 import { contentsForApex } from "../../content/contentForApex";
+import Footer from "../../presentational/Footer";
 
 // const DocsPageElement = ({ element }) => {
 //     switch(element.type) {
@@ -71,6 +72,7 @@ const DocsPage = ({ contentId }) => {
                     }
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
