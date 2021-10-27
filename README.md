@@ -1,1 +1,0 @@
-# wearemav3rik.github.io
