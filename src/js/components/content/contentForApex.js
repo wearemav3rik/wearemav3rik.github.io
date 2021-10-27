@@ -23,7 +23,7 @@ export const contentsForApex = [
                         type: 'paragraph',
                         html:
                             `For each line of code, the maximum is <strong>120 spaces.</strong>` +
-                            `<br/>This will prevent too much horizontal scrolling when reading through each other\'s code.`
+                            `<br/>This will prevent too much horizontal scrolling when reading through the code of every developer.`
                     }
                 ]
             },
