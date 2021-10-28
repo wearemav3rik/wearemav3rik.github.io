@@ -7,23 +7,31 @@ export const contentsForApex = [
         lastModifiedDate: '2021-10-25',
         sections: [
             {
-                id: 'item-1-1', label: '4 Spaces',
+                id: 'item-1-1', label: '1 Tab',
                 elements: [
                     {
                         type: 'paragraph',
                         html:
-                            'We will be using <strong>4 spaces</strong> to maximise readability of our code.' +
-                            '<br/>Ideally, we want to configure our tab keybinding to type 4 spaces'
+                            `We will be using <strong>1 Tab</strong> to maximise readability of our Apex code.
+                            Readability-wise 1 tab looks a lot like 4 spaces, but it will save us some
+                            character space and prevent us from reaching the <strong>100,000 character
+                            limit</strong> for Apex classes. Please note that this is strictly for Apex classes.`
                     }
                 ]
             },
-            {id: 'item-1-2', label: 'Max Spaces per Line',
+            {id: 'item-1-2', label: 'Max Characters per Line',
                 elements: [
                     {
                         type: 'paragraph',
                         html:
-                            `For each line of code, the maximum is <strong>120 spaces.</strong>` +
-                            `<br/>This will prevent too much horizontal scrolling when reading through the code of every developer.`
+                            `For each line of code, the maximum we want to set is <strong>120 characters.</strong>
+                            but as we are using tabs, tabs will look like 4 spaces and we therefore need to adjust that
+                            perspective such that we seemingly only reach 120 characters per line. The benefit of this 
+                            is that it will help us prevent too much horizontal scrolling when reading through other 
+                            people's code.
+                            <br/><br/>
+                            There are plugins that help us enforce this through providing visible vertical lines in
+                            which we will stop typing, if not already a feature of our IDE.`
                     }
                 ]
             },
