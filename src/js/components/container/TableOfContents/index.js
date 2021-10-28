@@ -16,7 +16,7 @@ const TableOfContents = () => (
           key={content.id}
           title={content.title}
           icon={content.icon}
-          href={`docs-page/${content.id}`}
+          href={`docs-page/${content.id}#${content.id}`}
         >
           {content.description}
         </PageContentItem>
